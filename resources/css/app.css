@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Every layout/component toggles dark mode via a `.dark` class on <html>
+   (see layouts/app.blade.php's Alpine `:class="{ 'dark': dark }"`), not
+   the OS `prefers-color-scheme` Tailwind v4 defaults to — this variant
+   override is required for every `dark:` utility used throughout the
+   Blade views to actually respond to that toggle. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@source "../views";
+
+[x-cloak] {
+    display: none !important;
+}

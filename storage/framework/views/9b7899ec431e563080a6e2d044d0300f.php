@@ -1,0 +1,2 @@
+<x-match-section :title="$section->title ?? \"Today's matches\"" :matches="$sections['today']" empty-text="No matches scheduled today." />
+<?php /**PATH C:\Sites\fieldforecasts\resources\views/partials/sections/today_matches.blade.php ENDPATH**/ ?>
